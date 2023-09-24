@@ -1,0 +1,148 @@
+@font-face {
+    font-family: muktaMalar;
+    src: url(./Mukta_Malar/MuktaMalar-Light.ttf);
+}
+
+body {
+    font-family: muktaMalar;
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+}
+
+nav {
+    border-bottom-style: solid;
+    border-bottom-color: rgb(0, 112, 94);
+    border-bottom-width: 6px;
+    background-color: rgb(0, 170, 142);
+    padding: 10px 10px 10px 10px;
+    display: flex;
+}
+
+nav a {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+#logo {
+    padding: 20px 20px 20px 20px;
+    width: 50px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    padding: 20px 20px 20px 20px;
+    font-size: 20px;
+}
+
+a:hover {
+    color: orange;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    padding: 30px 50px 30px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+header h2 {
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+#luigi {
+    padding: 40px 60px 40px 40px;
+}
+
+.info {
+    align-items: center;
+    align-content: center;
+}
+
+.padding {
+    padding: 30px 100px 30px 30px;
+}
+
+#bestellen {
+    padding: 30px 30px 30px 30px;
+    width: 200px;
+    background-color: darkblue;
+    text-align: center;
+    color:aliceblue;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 9px;
+}
+
+.uitleg {
+    border-top-style: solid;
+    border-top-color: rgb(52, 0, 119);
+    border-top-style: 5px;
+    display: flex;
+    padding: 100px 0px 100px 0px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#omschrijving {
+    padding: 50px 0px 50px 80px;
+}
+
+#punten {
+    background-color: rgb(176, 255, 209);
+    padding: 10px 100px 10px 100px;
+    border-radius: 20px;
+    text-align: left;
+}
+
+#product {
+    color: aliceblue;
+    background-color: blue;
+    padding: 50px 0px 20px 0px;
+    text-align: center;
+}
+
+#product h2 {
+    font-size: 35px;
+}
+
+#product img {
+    border-radius: 50px;
+}
+
+.producten {
+    display: flex;
+    padding: 40px 40px 40px 40px;
+    margin: 40px;
+    justify-content: space-around;
+}
+
+.producten p {
+    padding: 50px 50px 50px 50px;
+}
+
+.product {
+    width: 200px;
+    padding: 10px 30px 30px 30px;
+}
+
+footer {
+    background-color: darkblue;
+    color: aliceblue;
+    padding: 40px 40px 150px 40px;
+    justify-content: space-around;
+    display: flex;
+}
+
+footer a {
+    justify-content: space-around;
+}
