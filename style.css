@@ -3,9 +3,28 @@
     src: url(./Mukta_Malar/MuktaMalar-Light.ttf);
 }
 
+@media (400px <=width <=1000px) {}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (orientation: portrait) {
+    .nav {
+        flex-direction: column;
+    }
+
+    #form {
+        flex-direction: column;
+    }
+
+}
+
 body {
     font-family: muktaMalar;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 p {
@@ -28,13 +47,13 @@ nav a {
 }
 
 #logo {
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     width: 50px;
 }
 
 a {
     color: rgb(255, 255, 255);
-    padding: 20px 20px 20px 20px;
+    padding: 20px;
     font-size: 20px;
 }
 
@@ -61,6 +80,7 @@ header h2 {
 
 #luigi {
     padding: 40px 60px 40px 40px;
+    width: 500px;
 }
 
 .info {
@@ -69,18 +89,24 @@ header h2 {
 }
 
 .padding {
-    padding: 30px 100px 30px 30px;
+    padding: 30px 100px 30px 0px;
 }
 
 #bestellen {
-    padding: 30px 30px 30px 30px;
+    padding: 30px;
     width: 200px;
     background-color: darkblue;
     text-align: center;
-    color:aliceblue;
+    color: aliceblue;
     justify-content: center;
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     border-radius: 9px;
+}
+
+#bestellen:hover {
+    color: orange;
+    background-color: rgb(0, 0, 226);
 }
 
 .uitleg {
@@ -88,7 +114,7 @@ header h2 {
     border-top-color: rgb(52, 0, 119);
     border-top-style: 5px;
     display: flex;
-    padding: 100px 0px 100px 0px;
+    padding: 100px 0px;
     align-items: center;
     justify-content: space-around;
 }
@@ -104,9 +130,39 @@ header h2 {
     text-align: left;
 }
 
+#form {
+    width: 40%;
+    background-color: rgb(206, 206, 255);
+    padding: 20px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.textinput {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input:invalid {
+    border: 3px solid rgb(223, 61, 61);
+    background-color:rgb(232, 177, 186);
+}
+
+input:valid {
+    border: 3px solid rgb(68, 141, 68);
+    background-color:rgb(195, 234, 195);
+}
+
 #product {
     color: aliceblue;
-    background-color: blue;
+    background-color: rgb(53, 53, 160);
     padding: 50px 0px 20px 0px;
     text-align: center;
 }
@@ -124,6 +180,14 @@ header h2 {
     padding: 40px 40px 40px 40px;
     margin: 40px;
     justify-content: space-around;
+    align-items: center;
+}
+
+.producten div {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 100%;
 }
 
 .producten p {
